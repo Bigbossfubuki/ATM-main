@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Balance</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>View Balance</h1>
+    <form method="POST">
+        <input type="text" name="account_number" placeholder="Account Number" required><br>
+        <input type="submit" value="View Balance">
+    </form>
+    {% if account %}
+        <h2>Account Balance for {{ account.username }}: {{ account.balance }}</h2>
+    {% endif %}
+    <a href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>

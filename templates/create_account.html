@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Account</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Create Account</h1>
+    <form method="POST">
+        <input type="text" name="account_number" placeholder="Account Number" required><br>
+        <input type="text" name="username" placeholder="Username" required><br>
+        <input type="number" name="initial_deposit" placeholder="Initial Deposit" required><br>
+        <input type="submit" value="Create Account">
+    </form>
+    <a href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>

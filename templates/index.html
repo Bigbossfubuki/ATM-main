@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ATM Simulation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Welcome to ATM Simulation</h1>
+    <ul>
+        <li><a href="{{ url_for('create_account') }}">Create Account</a></li>
+        <li><a href="{{ url_for('view_balance') }}">View Balance</a></li>
+        <li><a href="{{ url_for('deposit') }}">Deposit</a></li>
+        <li><a href="{{ url_for('withdraw') }}">Withdraw</a></li>
+        <li><a href="{{ url_for('delete_account') }}">Delete Account</a></li>
+    </ul>
+</body>
+</html>

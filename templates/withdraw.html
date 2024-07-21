@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Withdraw</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Withdraw Money</h1>
+    <form method="POST">
+        <input type="text" name="account_number" placeholder="Account Number" required><br>
+        <input type="number" name="amount" placeholder="Amount" required><br>
+        <input type="submit" value="Withdraw">
+    </form>
+    <a href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>
